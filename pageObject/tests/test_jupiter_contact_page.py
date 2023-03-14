@@ -17,6 +17,7 @@ class TestContactPage(BaseTest):
         self.contact_page.do_click_submit_button()
         assert self.contact_page.get_error_message() == ['Forename is required', 'Email is required', 'Message is required']
 
+    @pytest.mark.repeat(5)
     def test_submit_with_input(self):
         username = 'USER'
         self.go_to_contact_page()
