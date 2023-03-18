@@ -2,7 +2,7 @@ import xlrd
 import os
 dir = os.path.dirname(os.path.realpath('__file__'))
 # print(dir)
-filename = os.path.join(dir, '../excel/sample.xlsx')
+filename = os.path.join(dir, 'excel/sample.xlsx')
 
 #install xlrd
 
