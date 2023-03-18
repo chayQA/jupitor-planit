@@ -13,7 +13,9 @@ class BaseTest:
         options.add_argument("--disable-gpu")
         options.add_argument("--disable-dev-shm-usage")
         options.add_argument("--no-sandbox")
-        web_driver = webdriver.Chrome(executable_path=ConfigData.CHROME_DRIVER_PATH, options =options) 
+        options.binary_location
+
+        web_driver = webdriver.Chrome(options =options) 
         request.cls.driver = web_driver
         yield
         web_driver.quit()
